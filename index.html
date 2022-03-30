@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cameroon doubai expo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=divice-width maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		.banner{
+			width: 100%;
+			height: 100vh;
+			background-image: url(images/banner1.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+		}
+
+		.emir{
+			width: 100%;
+			min-height: 300px;
+			background-image: url(images/president_bg.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 10px 50px 0px 50px ;
+		}
+		.president{
+			width: 100%;
+			min-height: 300px;
+			background-image: url(images/president_bg1.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 10px 50px 0px 50px ;
+		}
+		.down_counter{
+			width: 100%;
+			min-height: 150px;
+			background-image: url(images/counter.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+			flex-direction: row;
+			align-items: center;
+			padding: 20px;
+			color: #ffffff;
+		}
+		.parallax{
+			width: 100%;
+			height: 500px;
+			background: url('images/CAMEROUN DUBAI EXPO 2020 _LE CAMEROUN EN VITRINE A DUBAI-3.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		.modal-title{
+			width: 100%;
+			height: auto;
+			padding:50px 0px 50px 0px;
+			text-align: center;
+			color: white;
+			background-color:grey;
+			font-weight: bolder;
+			font-size: 30px;
+			background-image: url('images/madal_banner.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		@media screen and (max-width: 838px){
+			.president{
+				flex-direction: column;
+				padding: 10px 0px 0px 0px ;
+			}
+
+			.emir{
+				flex-direction: column-reverse;
+				padding: 10px 0px 0px 0px ;
+			}
+			.discourt{
+				width: 80%;
+				padding-left: 0px;
+				text-align: center;
+				margin-top: 20px;
+			}
+	
+		}
+
+		@media screen and (max-width: 768px){
+			.down_counter{
+				flex-direction: column;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<!-- popup -->
+
+			<div class="modal_container">
+				<div class="modal_box">
+					<div class="close_modal">&#215;</div>
+					<div class="modal-title">contactez nous</div>
+					<form class="modal_form">
+						<input class="modal_input" type="texte" name="nom" placeholder="votre nom">
+						<input class="modal_input" type="texte" name="nom" placeholder="e-mail">
+						<input class="modal_input" type="texte" name="nom" placeholder="telephone">
+						<textarea class="modal_message" placeholder="message..."> 
+						</textarea>
+						<input class="modal_send" type="subit" name="" value="envoyer">
+					</form>
+					<div class="oder_modal_contact">
+						+237 000 000 000/meetatdibailexpo@gmail.com
+					</div>
+				</div>
+				
+			</div>
+
+		<!-- /popup -->
+
+
+	<div class="nav">
+		<div class="nav_containner">
+			<div class="logo">
+				<img class="logo_size" src="images/logo cameroun doubai expo1.png">
+			</div>
+			<ul>
+				<a  href="index.html"><li>Accueil</li></a>
+				<a  href="activite.html"><li>Activité</li></a>
+				<a  href="programme.html"><li>Programme</li></a>
+				<a  href="inscription.html"><li>Inscription</li></a>
+				<a 	id='modale'><li>Contactez nous</li></a>
+			</ul>
+			<span id="toggle_icon">&equiv;</span>
+				
+		</div>
+	</div>         
+	<div class="banner" >
+		<div class="banner_text_content">
+			<div class="event_title">Meet Cameroon at Dubai Expo 2020</div>
+			<div class="event_sub_title">A sure destination Investment</div>
+			<div class="event_date">Dubai, du 20 au 24 Novembre 2021</div>
+			<div class="event_button">Consulter le programme</div>
+		</div>
+	</div>
+
+	<div class="body_containner">
+		<!-- discour emir dubai -->
+		<div class="emir">
+			<img class="picture" src="images/emir-de-dubail.png">
+			<div class="discourt">
+				« Notre travail consiste à fournir un environnement qui libère le potentiel des femmes – un environnement qui protège leur dignité et leur féminité, les aide à créer l’équilibre nécessaire dans leur vie et valorise leurs talents et leur potentiel. Compte tenu de cet environnement, je suis convaincue que les femmes accompliront rien de moins que des miracles. »
+				<div class="nom_autorite">His Highness Sheikh Mohammed bin Rashid Al Maktoum</div>
+				<div class="tile_autorite">Vice President and Prime Minister of the UAE and Ruler of Dubai</div>
+			</div>
+
+		</div>
+
+		<!-- /discour emir dubai -->
+
+		<!-- counter design -->
+		<div class="down_counter">
+			<div class="counter_event_name">
+				Meet Cameroon at<br> 
+				<span>Dubai Expo 2020</span>
+			</div>
+
+			<div id="counter_box">
+				<div class="box">
+					<div class="chiffre" id="jours">20</div>
+					<div class="lettre">jours</div>
+				</div>
+				<div class="box">
+					<div class="chiffre" id="heures">50</div>
+					<div class="lettre">heures</div>
+				</div>
+				<div class="box">
+					<div class="chiffre" id="minutes">33</div>
+					<div class="lettre">minute</div>
+				</div>
+				<div class="box">
+					<div class="chiffre" id="secondes">14</div>
+					<div class="lettre">seconde</div>
+				</div>
+			</div>
+
+			<div class="counter_icon"><i class="fa fa-history fa-3x"></i></div>
+
+		</div>
+		<!-- /counter design -->
+
+		<!-- /discour paul biya -->
+		<div class="president">
+			<div class="discourt">
+				« ….Nul doute que tous ces éléments caractéristiques feront de l’Afrique un partenaire sans cesse convoitée, 
+				par les pays plus avancés aujourd’hui et à la recherche d’un second souffle pour leurs économies. Dans un 
+				monde marqué par une interdépendance toujours accrue des économies et des sociétés, le défi est celui de la 
+				construction d’espaces authentiques de prospérité partagée. Il s’agit de bâtir un nouveau type de relations 
+				économiques et sociopolitiques, autour de l’idée de bénéfice mutuel entre partenaires… » 
+				Extrait du discours d’ouverture de S.E.M Paul BIYA, Président de la République du Cameroun à la Conférence 
+				Economique Internationale « Investir au Cameroun, Terre d’Attractivités » (Yaoundé, 17 mai 2016
+				<div class="nom_autorite">Message de S.E Excellence Paul BIYA,</div>
+				<div class="tile_autorite">Président de la République du Cameroun, Chef de l’Etat</div>
+			</div>
+			<img class="picture" src="images/paul-biya.png">
+
+		</div>
+		<!-- /discour paul biya -->
+		<div class="parallax">
+			
+		</div>
+
+		<!-- partenaire -->
+
+		<div class="patner_contain">
+			<div class="patner_container_box">
+				<div class="patner_title">Nos partenaires</div>
+			<div class="carousel owl-carousel">
+				<div class="card card-1"><img class='logo_image' src="images/logo1.jpg"></div>
+				<div class="card card-2"><img class='logo_image' src="images/logo2.jpg"></div>
+				<div class="card card-3"><img class='logo_image' src="images/logo3.jpg"></div>
+				<div class="card card-4"><img class='logo_image' src="images/logo4.jpg"></div>
+				<div class="card card-5"><img class='logo_image' src="images/logo5.jpg"></div>
+				<div class="card card-6"><img class='logo_image' src="images/logo6.jpg"></div>
+			</div>
+			</div>
+		</div>
+		<!-- /partenaire -->
+
+		<!-- footer -->
+		<div class="footer">
+			<div class="footer1">
+				<div class="footer1_news_letter">
+					 <div class="footer1_title">News letter</div>
+					 	<form class='footer_form'>
+					 		<input class="footer_input" type="text" name="" placeholder="votre mail">
+					 		<button class="form_icon_contain">
+					 			<i class="fa fa-envelope fa-2x"></i>
+					 		</button> 
+					 	</form>
+				</div>
+
+				<div class="footer1_media_container">
+					<div class="footer1_title">Suivez nous</div>
+					<div class="social_media_contain">
+						<a href=""><i class="fa fa-facebook-square fa-2x media"></i></a>
+						<a href=""><i class="fa fa-instagram fa-2x media"></i></a>
+						<a href=""><i class="fa fa-youtube fa-2x media"></i></a>
+						<a href=""><i class="fa fa-whatsapp fa-2x media"></i></a>
+						<a href=""><i class="fa fa-twitter-square fa-2x media"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer2">
+				+237 000 000 000/meetatdibailexpo@gmail.com<br>
+				Copyrights <i class="fa fa-copyright"></i> meet cameroon at dubai expo 2021. All rights reserved.
+			</div>
+
+		</div>
+
+		<!-- footer -->
+
+
+		
+	</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="https://use.fontawesome.com/96743e4f02.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script type="text/javascript">
+	$('#counter_box').countdown('2021/11/20',function(event){
+		$('#jours').html(event.strftime('%D'));
+		$('#heures').html(event.strftime('%H'));
+		$('#minutes').html(event.strftime('%M'));
+		$('#secondes').html(event.strftime('%S'));
+	});
+
+	$('.carousel').owlCarousel({
+		margin:10,
+		loop:true,
+		autoplay:true,
+		autoplayTimeout:2000,
+		autoplayHoverPause:true,
+		responsive:{
+			0:{
+				items:2,
+				nav:false,
+			},
+			500:{
+				items:3,
+				nav:false,
+			},
+			1000:{
+				items:5,
+				nav:false,
+			},
+		}
+	});
+</script>
+</body>
+</html>
